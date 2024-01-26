@@ -1,15 +1,7 @@
 # Install HomeBrew 
-if type brew:
-  
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-
-
-# Update ShortCuts
-# cat << EOF >> ~./.zprofile
-
-
-function _exists {
-
-  type "$1" $> /dev/null
-}
+if command -v "brew" &> /dev/null; then
+  echo "Brew is already installed"
+else
+  echo "Homebrew not found. Installing Brew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
