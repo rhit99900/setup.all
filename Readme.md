@@ -5,8 +5,11 @@ Installation of required packages for Web Development Projects
 ## Usage
 
 Clone the Repository
-`git clone git@github.com:rhit99900/setup.all.git`
 
-`cd setup.all`
+```SH
+git clone git@github.com:rhit99900/setup.all.git
 
-`sh ./init.sh`
+cd setup.all
+
+sh ./init.sh
+```
